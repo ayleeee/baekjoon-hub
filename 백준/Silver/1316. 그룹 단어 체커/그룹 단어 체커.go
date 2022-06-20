@@ -33,9 +33,7 @@ func main() {
 
 		for j := 1; j < len(str); j++ {
 			charnum := int(str[j]) - 97
-			if str[j] == str[j-1] {
-				continue
-			} else if str[j] != str[j-1] && alpha[charnum] == true {
+			if str[j] != str[j-1] && alpha[charnum] == true {
 				cnt += 1
 				break
 			} else {
