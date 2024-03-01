@@ -2,6 +2,8 @@
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 
+(** 2024년 3월 1일 전은 golang, 후는 c++ 을 사용하였습니다. )
+
 ### [1] 백트래킹
 |문제 번호|문제 이름|풀이|
 |:---:|:---------------:|:---------------:|
