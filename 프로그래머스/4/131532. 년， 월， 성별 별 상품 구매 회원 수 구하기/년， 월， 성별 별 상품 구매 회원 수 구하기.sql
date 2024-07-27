@@ -1,0 +1,9 @@
+-- USER_IFNO 테이블과 ONLINE_SALE 테이블에서
+-- 년 월 성별 별로 상품을 구매한 회원수를 집계하는 SQL
+-- 결과 : 년 월 성별 기준 오름차순
+-- 성별 정보가 없는 경우 결과에서 제외
+SELECT YEAR(SALES_DATE) as YEAR, MONTH(SALES_DATE) as MONTH, GENDER,  COUNT(distinct u.USER_ID) as USERS
+FROM USER_INFO u JOIN ONLINE_SALE o ON u.USER_ID = o.USER_ID
+WHERE GENDER is not null
+GROUP BY YEAR(SALES_DATE), MONTH(SALES_DATE), GENDER
+ORDER BY YEAR, MONTH, GENDER asc;
